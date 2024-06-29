@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0">
+	<title>LoreBookReader</title>
+	<link rel="icon" type="favicon" href="icon.png">
+	<link rel="stylesheet" type="text/css" href="https://runeapps.org/runeappslib.css">
+	<link rel="stylesheet" type="text/css" href="https://runeapps.org/nis/nis.css">
+	<style>
+		body {
+			height: 100vh;
+		}
+
+		header,
+		footer {
+			text-align: center;
+			padding: 1em;
+		}
+
+		h2,
+		h3 {
+			text-align: center;
+		}
+
+		h2 {
+			background-color: #FFD33F;
+			margin: 1em 0 0;
+			color: transparent;
+			-webkit-background-clip: text;
+			background-clip: text;
+			text-shadow: 1px 1px 0px rgb(0 0 0 / 10%);
+			font-family: 'trajan-pro-3', serif;
+		}
+
+		h3 {
+			color: var(--nis-col-low);
+			margin-block: 0;
+			font-size: 1em;
+			font-weight: 550;
+			font-style: italic;
+		}
+
+		main {
+			height: calc(100vh - 280px);
+			padding-inline: 1em;
+			overflow-y: auto;
+		}
+
+		.nisbutton {
+			display: inline-block;
+			margin: 1em auto;
+		}
+
+		a {
+			color: var(--nis-col-url);
+			text-underline-offset: 0.2em;
+			text-decoration-color: #FFD33F55;
+			font-weight: bold;
+		}
+
+		a:hover {
+			color: var(--nis-col-urlhover);
+		}
+	</style>
+</head>
+
+<body class="nis">
+	<header>
+		<h1>LoreBookReader</h1>
+		<p>Example app to show LoreBookReader's functionality. Press the alt + 1 keybind or click the button below to
+			capture an open book.</p>
+
+		<div class="nisseperator"></div>
+		<button class="nisbutton" id="captureLore"><span>Capture Lore book</span></button>
+		<div class="nisseperator"></div>
+	</header>
+	<main></main>
+	<footer>
+		<div class="nisseperator"></div>
+		<p>For more information, visit the <a href="https://github.com/ExInferi/LoreBookReader" target="_blank">Github repository</a>
+		</p>
+		<p>©2024 <a href="https://exinferi.nl" target="_blank">Ex Inferi</a></p>
+	</footer>
+	<script src="./main.js"></script>
+</body>
+
+</html>

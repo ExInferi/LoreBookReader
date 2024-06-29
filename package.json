@@ -1,0 +1,26 @@
+{
+  "author": "Ex Inferi <dev@exinferi.nl>",
+  "name": "lorebookreader",
+  "description": "Example app for reading lore books with alt1 using the LoreBookReader class",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "alt1": "^0.0.7"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.54",
+    "css-loader": "^7.1.2",
+    "gh-pages": "^6.1.1",
+    "sharp": "^0.31.3",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.3.1",
+    "typescript": "^5.1.3",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.8.0"
+  }
+}

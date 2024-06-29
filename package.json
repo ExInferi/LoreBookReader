@@ -2,7 +2,7 @@
   "author": "Ex Inferi <dev@exinferi.nl>",
   "name": "lorebookreader",
   "description": "Example app for reading lore books with alt1 using the LoreBookReader class",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "build": "webpack",
     "watch": "webpack --watch",

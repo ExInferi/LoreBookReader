@@ -12,7 +12,7 @@ Before using the LoreBookReader, ensure you have the Alt1 library installed and 
    npm i -D alt1
    ```
 
-2. Download `lorebook.ts` and `assets/index.ts` and place them inside your app folder.
+2. Download `lorebook.ts` and `assets/index.ts` from the [latest release](https://github.com/ExInferi/LoreBookReader/releases/latest) and place them inside your app folder.
 
 That's pretty much it. Check out the [Alt1 example app](https://github.com/skillbert/alt1minimal) for more info on how to create an app for Alt1.
 

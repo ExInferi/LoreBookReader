@@ -7,7 +7,8 @@
     "build": "webpack",
     "watch": "webpack --watch",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "patch": "npm version patch && npm run deploy"
   },
   "dependencies": {
     "alt1": "^0.0.7"

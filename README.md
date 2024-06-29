@@ -4,7 +4,7 @@ The [`LoreBookReader`](lorebook.ts) is a TypeScript class designed to interact w
 
 ## Installation
 
-Before using the LoreBookReader, ensure you have the Alt1 library installed and your project is set up to use TypeScript.
+Before using the `LoreBookReader`, ensure you have the Alt1 library installed and your project is set up to use TypeScript.
 
 1. Install the Alt1 library in your project (assuming npm is used for package management):
 
@@ -59,11 +59,11 @@ To use the `LoreBookReader`, follow these steps:
 
 ## Main Methods
 
-- **find(img?: ImgRef):** Finds the lore book in the provided image or captures a new image if none is provided. Returns the position of the lore book or `null` if not found.
+- **`find(img?: ImgRef):`** Finds the lore book in the provided image or captures a new image if none is provided. Returns the position of the lore book or `null` if not found.
 
-- **readLines(imageBuffer: ImageData, x: number, y: number):** Reads a line of text from the provided image buffer starting at the specified coordinates. Returns the text of the line if found, otherwise an empty string.
+- **`readLines(imageBuffer: ImageData, x: number, y: number):`** Reads a line of text from the provided image buffer starting at the specified coordinates. Returns the text of the line if found, otherwise an empty string.
 
-- **read():** Reads the content of the lore book and returns an object containing the title, page numbers, and lines of text. Throws an error if no lore book is found.
+- **`read():`** Reads the content of the lore book and returns an object containing the title, page numbers, and lines of text. Throws an error if no lore book is found.
 
 ## Example app
 

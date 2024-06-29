@@ -136,7 +136,7 @@ if (window.alt1) {
     alt1.identifyAppUrl('./appconfig.json');
 }
 else {
-    document.querySelector('main').innerHTML = 'This app is meant to be run in Alt1 Toolkit. <a href="alt1://addapp/appconfig.json">Click here to add the app.</a>';
+    document.querySelector('main').innerHTML = 'This app is meant to be run in Alt1 Toolkit. <a href="alt1://addapp/https://exinferi.github.io/LoreBookReader/appconfig.json">Click here to add the app.</a>';
 }
 
 __webpack_async_result__();

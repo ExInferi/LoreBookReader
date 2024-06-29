@@ -39,9 +39,6 @@ export type Book = {
 
 /**
  * Rework of the lore book reader to use the latest Alt1 library.
- * 
- * @class LoreBookReader
- * 
  * Based on the original lore book reader at https://runeapps.org//imagelibs/lorebook.js
  */
 export default class LoreBookReader {

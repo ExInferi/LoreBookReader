@@ -1,7 +1,5 @@
 # LoreBookReader
 
-## Introduction
-
 The [`LoreBookReader`](lorebook.ts) is a TypeScript class designed to interact with the Alt1 library for reading and interpreting lore books within RuneScape. It is based on the old Alt1 library's [`lorebook.js`](https://runeapps.org//imagelibs/lorebook.js.) This class provides methods to find lore books in images, read lines of text from these books, and compile the content into a structured format.
 
 ## Installation
@@ -11,7 +9,7 @@ Before using the LoreBookReader, ensure you have the Alt1 library installed and 
 1. Install the Alt1 library in your project (assuming npm is used for package management):
 
    ```shell
-   npm install -D alt1
+   npm i -D alt1
    ```
 
 2. Download `lorebook.ts` and `assets/index.ts` and place them inside your app folder.
@@ -70,7 +68,8 @@ To use the `LoreBookReader`, follow these steps:
 ## Example app
 
 There is a simple Alt1 example app available to have a deeper dive into using the `LoreBookReader`.  
-The source can be viewed in the branch [`example-app`](https://github.com/ExInferi/LoreBookReader/tree/example-app). The app is hosted [here](https://exinferi.github.io/LoreBookReader/) with GitHub pages. Or [click here](alt1://addapp/https://exinferi.github.io/LoreBookReader/appconfig.json) to add the app to Alt1 Toolkit.
+The source can be viewed in the branch [`example-app`](https://github.com/ExInferi/LoreBookReader/tree/example-app). The app is hosted [here](https://exinferi.github.io/LoreBookReader/) with GitHub pages. Or copy and paste the following into your browser to add the app to Alt1 Toolkit:  
+`alt1://addapp/https://exinferi.github.io/LoreBookReader/appconfig.json`
 
 ## License
 
@@ -78,7 +77,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-- **@ExInferi:** For the development and maintenance of the LoreBookReader project.
-- **@Skillbert:** For providing the original lore book reader.
+- **[@ExInferi](https://github.com/ExInferi):** For the development and maintenance of the LoreBookReader project.
+- **[@skillbert](https://github.com/skillbert):** For providing the original lore book reader.
 
 For more information on how to use the LoreBookReader and contribute to the project, please visit the project's GitHub page.

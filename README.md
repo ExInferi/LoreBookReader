@@ -77,5 +77,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-**[@ExInferi](https://github.com/ExInferi):** For the development and maintenance of the LoreBookReader project.
+**[@ExInferi](https://github.com/ExInferi):** For the development and maintenance of the LoreBookReader project.  
 **[@skillbert](https://github.com/skillbert):** For providing the original lore book reader.

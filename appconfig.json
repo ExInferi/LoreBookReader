@@ -1,0 +1,16 @@
+{
+	"appName": "LoreBookReader",
+	"description": "Example app for reading lore books with alt1 using the LoreBookReader class",
+	"appUrl": "./index.html",
+	"configUrl": "./appconfig.json",
+	"iconUrl": "./icon.png",
+	"defaultWidth": 550,
+	"defaultHeight": 400,
+	"minWidth": 300,
+	"minHeight": 300,
+	"requestHandlers": [],
+	"activators": [
+		"regex:(Read.*)"
+	],
+	"permissions": "pixel"
+}

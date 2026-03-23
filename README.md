@@ -63,6 +63,8 @@ To use the `LoreBookReader`, follow these steps:
 
 - **`readLines(imageBuffer: ImageData, x: number, y: number):`** Reads a line of text from the provided image buffer starting at the specified coordinates. Returns the text of the line if found, otherwise an empty string.
 
+- **`readTitle():`** Reads the title text from the lore book title area. Returns the detected title if found, otherwise an empty string.
+
 - **`read():`** Reads the content of the lore book and returns an object containing the title, page numbers, and lines of text. Throws an error if no lore book is found.
 
 ## Example app

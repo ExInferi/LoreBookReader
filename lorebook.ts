@@ -1,7 +1,7 @@
 ﻿import * as a1lib from 'alt1/base';
 import { ImgRef } from 'alt1/base';
 import * as OCR from 'alt1/ocr';
-import { font, sourceimg } from './assets';
+import { font, sourceimg, fontheavy } from './assets';
 
 
 // Lorebook detection settings
@@ -14,18 +14,22 @@ const WIDTH: number = 450;
 /** The height of the lore book detection area. */
 const HEIGHT: number = 320;
 /** The y-coordinate (base) position of the page numbers. */
-const PAGE_NUM_POS: number = 309;
+const PAGE_NUM_POS: number = 313;
 /** The x-coordinate position of the left page number. */
-const PAGE_LEFT: number = 12;
+const PAGE_LEFT: number = 20;
 /** The x-coordinate position of the right page number. */
-const PAGE_RIGHT: number = 424;
+const PAGE_RIGHT: number = 416;
+/** The height of the title capture strip at the top of the lore book. */
+const TITLE_HEIGHT: number = 25;
+/** The y-coordinate within the title strip used for small-caps OCR. */
+const TITLE_Y: number = 15;
 
 
 /**
  * Represents a lore book with its title, page numbers, and lines of text.
  */
 export type Book = {
-  /** The title of the book. (Not implemented yet) */
+  /** The title of the book. */
   title: string;
   /** The left page number. */
   pageLeft: string;
@@ -115,6 +119,19 @@ export default class LoreBookReader {
     }
 
   /**
+   * Reads the lore book title from the top title strip of the currently detected book.
+   * @returns {string} The detected title text, or an empty string if OCR did not find a title.
+   */
+  readTitle(): string {
+    // Capture the title area of the lore book using the defined position and dimensions
+    const buf: ImageData = a1lib.capture(this.pos.x, this.pos.y, WIDTH, TITLE_HEIGHT);
+    // Use OCR to read the title text from the captured image buffer
+    const title = OCR.readSmallCapsBackwards(buf, fontheavy, [[240, 190, 121]], 0, TITLE_Y, WIDTH, 1);
+
+    return title.text ?? '';
+  }
+
+  /**
    * Reads the content of the lore book.
    * @returns {Book} An object containing the title, page numbers, and lines of text from the lore book.
    * @throws An error if no lore book is found.
@@ -152,11 +169,7 @@ export default class LoreBookReader {
     // Calculates a hash for the title area of the image to uniquely identify it.
     textData.titleHash = imageBuffer.getPixelHash(new a1lib.Rect(110, 8, 200, 8));
 
-    /* // CANTFIX: Not able to read the title, as the font for titles hasn't been implemented into the Alt1 API yet (I think?) 
-    alt1.addOCRFont('heavy', heavy);
-    const img = a1lib.captureHold(this.pos.x, this.pos.y, WIDTH, HEIGHT)
-    textData.title = alt1.bindReadColorString(img.handle, 'heavy', a1lib.mixColor(255, 211, 63), 220, 18) || '';
-     */
+    textData.title = this.readTitle();
 
     // Reads the page numbers from the lore book image.
     // The last two booleans in the function calls indicate reading direction.

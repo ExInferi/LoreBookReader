@@ -423,35 +423,35 @@ return /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/base/alt1api.ts":
+/***/ "./src/base/alt1api.ts"
 /*!*****************************!*\
   !*** ./src/base/alt1api.ts ***!
   \*****************************/
-/***/ ((__unused_webpack_module, exports) => {
+(__unused_webpack_module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/base/declarations.ts":
+/***/ "./src/base/declarations.ts"
 /*!**********************************!*\
   !*** ./src/base/declarations.ts ***!
   \**********************************/
-/***/ ((__unused_webpack_module, exports) => {
+(__unused_webpack_module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/base/imagedata-extensions.ts":
+/***/ "./src/base/imagedata-extensions.ts"
 /*!******************************************!*\
   !*** ./src/base/imagedata-extensions.ts ***!
   \******************************************/
-/***/ (function(__unused_webpack_module, exports, __nested_webpack_require_2062__) {
+(__unused_webpack_module, exports, __nested_webpack_require_2022__) {
 
 
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
@@ -479,10 +479,10 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ImageData = void 0;
-const a1lib = __importStar(__nested_webpack_require_2062__(/*! ./index */ "./src/base/index.ts"));
-const nodeimports = __importStar(__nested_webpack_require_2062__(/*! ./nodepolyfill */ "./src/base/nodepolyfill.ts"));
+const a1lib = __importStar(__nested_webpack_require_2022__(/*! ./index */ "./src/base/index.ts"));
+const nodeimports = __importStar(__nested_webpack_require_2022__(/*! ./nodepolyfill */ "./src/base/nodepolyfill.ts"));
 (function () {
-    var globalvar = (typeof self != "undefined" ? self : (typeof __nested_webpack_require_2062__.g != "undefined" ? __nested_webpack_require_2062__.g : null));
+    var globalvar = (typeof self != "undefined" ? self : (typeof __nested_webpack_require_2022__.g != "undefined" ? __nested_webpack_require_2022__.g : null));
     var filltype = typeof globalvar.ImageData == "undefined";
     var fillconstr = filltype;
     if (!filltype) {
@@ -716,13 +716,13 @@ exports.ImageData.prototype.copyTo = function (target, sourcex, sourcey, width, 
 };
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/base/imagedetect.ts":
+/***/ "./src/base/imagedetect.ts"
 /*!*********************************!*\
   !*** ./src/base/imagedetect.ts ***!
   \*********************************/
-/***/ (function(__unused_webpack_module, exports, __nested_webpack_require_12931__) {
+(__unused_webpack_module, exports, __nested_webpack_require_12874__) {
 
 
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
@@ -750,10 +750,10 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ImageDataSet = exports.webpackImages = exports.asyncMap = exports.coldif = exports.simpleCompareRMSE = exports.simpleCompare = exports.findSubbuffer = exports.findSubimage = exports.clearPngColorspace = exports.isPngBuffer = exports.imageDataFromFileBuffer = exports.imageDataFromBase64 = exports.imageDataFromUrl = void 0;
-const imgref_1 = __nested_webpack_require_12931__(/*! ./imgref */ "./src/base/imgref.ts");
-const wapper = __importStar(__nested_webpack_require_12931__(/*! ./wrapper */ "./src/base/wrapper.ts"));
-const nodeimports = __importStar(__nested_webpack_require_12931__(/*! ./nodepolyfill */ "./src/base/nodepolyfill.ts"));
-const _1 = __nested_webpack_require_12931__(/*! . */ "./src/base/index.ts");
+const imgref_1 = __nested_webpack_require_12874__(/*! ./imgref */ "./src/base/imgref.ts");
+const wapper = __importStar(__nested_webpack_require_12874__(/*! ./wrapper */ "./src/base/wrapper.ts"));
+const nodeimports = __importStar(__nested_webpack_require_12874__(/*! ./nodepolyfill */ "./src/base/nodepolyfill.ts"));
+const _1 = __nested_webpack_require_12874__(/*! . */ "./src/base/index.ts");
 /**
 * Downloads an image and returns the ImageData.
 * Cleans sRGB headers from downloaded png images. Assumes that data url's are already cleaned from sRGB and other headers
@@ -1141,18 +1141,18 @@ class ImageDataSet {
 exports.ImageDataSet = ImageDataSet;
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/base/imgref.ts":
+/***/ "./src/base/imgref.ts"
 /*!****************************!*\
   !*** ./src/base/imgref.ts ***!
   \****************************/
-/***/ ((__unused_webpack_module, exports, __nested_webpack_require_29896__) => {
+(__unused_webpack_module, exports, __nested_webpack_require_29830__) {
 
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ImgRefData = exports.ImgRefBind = exports.ImgRefCtx = exports.ImgRef = void 0;
-const index_1 = __nested_webpack_require_29896__(/*! ./index */ "./src/base/index.ts");
+const index_1 = __nested_webpack_require_29830__(/*! ./index */ "./src/base/index.ts");
 /**
  * Represents an image that might be in different types of memory
  * This is mostly used to represent images still in Alt1 memory that have
@@ -1256,13 +1256,13 @@ class ImgRefData extends ImgRef {
 exports.ImgRefData = ImgRefData;
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/base/index.ts":
+/***/ "./src/base/index.ts"
 /*!***************************!*\
   !*** ./src/base/index.ts ***!
   \***************************/
-/***/ (function(__unused_webpack_module, exports, __nested_webpack_require_33868__) {
+(__unused_webpack_module, exports, __nested_webpack_require_33782__) {
 
 
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
@@ -1296,17 +1296,17 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.imageDataFromUrl = exports.ImageDataSet = exports.findSubbuffer = exports.simpleCompare = exports.findSubimage = exports.webpackImages = exports.NodePolyfill = exports.ImageData = exports.Rect = exports.PasteInput = exports.ImageDetect = void 0;
-__nested_webpack_require_33868__(/*! ./declarations */ "./src/base/declarations.ts");
-exports.ImageDetect = __importStar(__nested_webpack_require_33868__(/*! ./imagedetect */ "./src/base/imagedetect.ts"));
-exports.PasteInput = __importStar(__nested_webpack_require_33868__(/*! ./pasteinput */ "./src/base/pasteinput.ts"));
-var rect_1 = __nested_webpack_require_33868__(/*! ./rect */ "./src/base/rect.ts");
+__nested_webpack_require_33782__(/*! ./declarations */ "./src/base/declarations.ts");
+exports.ImageDetect = __importStar(__nested_webpack_require_33782__(/*! ./imagedetect */ "./src/base/imagedetect.ts"));
+exports.PasteInput = __importStar(__nested_webpack_require_33782__(/*! ./pasteinput */ "./src/base/pasteinput.ts"));
+var rect_1 = __nested_webpack_require_33782__(/*! ./rect */ "./src/base/rect.ts");
 Object.defineProperty(exports, "Rect", ({ enumerable: true, get: function () { return __importDefault(rect_1).default; } }));
-var imagedata_extensions_1 = __nested_webpack_require_33868__(/*! ./imagedata-extensions */ "./src/base/imagedata-extensions.ts");
+var imagedata_extensions_1 = __nested_webpack_require_33782__(/*! ./imagedata-extensions */ "./src/base/imagedata-extensions.ts");
 Object.defineProperty(exports, "ImageData", ({ enumerable: true, get: function () { return imagedata_extensions_1.ImageData; } }));
-exports.NodePolyfill = __importStar(__nested_webpack_require_33868__(/*! ./nodepolyfill */ "./src/base/nodepolyfill.ts"));
-__exportStar(__nested_webpack_require_33868__(/*! ./imgref */ "./src/base/imgref.ts"), exports);
-__exportStar(__nested_webpack_require_33868__(/*! ./wrapper */ "./src/base/wrapper.ts"), exports);
-var imagedetect_1 = __nested_webpack_require_33868__(/*! ./imagedetect */ "./src/base/imagedetect.ts");
+exports.NodePolyfill = __importStar(__nested_webpack_require_33782__(/*! ./nodepolyfill */ "./src/base/nodepolyfill.ts"));
+__exportStar(__nested_webpack_require_33782__(/*! ./imgref */ "./src/base/imgref.ts"), exports);
+__exportStar(__nested_webpack_require_33782__(/*! ./wrapper */ "./src/base/wrapper.ts"), exports);
+var imagedetect_1 = __nested_webpack_require_33782__(/*! ./imagedetect */ "./src/base/imagedetect.ts");
 Object.defineProperty(exports, "webpackImages", ({ enumerable: true, get: function () { return imagedetect_1.webpackImages; } }));
 Object.defineProperty(exports, "findSubimage", ({ enumerable: true, get: function () { return imagedetect_1.findSubimage; } }));
 Object.defineProperty(exports, "simpleCompare", ({ enumerable: true, get: function () { return imagedetect_1.simpleCompare; } }));
@@ -1315,21 +1315,21 @@ Object.defineProperty(exports, "ImageDataSet", ({ enumerable: true, get: functio
 Object.defineProperty(exports, "imageDataFromUrl", ({ enumerable: true, get: function () { return imagedetect_1.imageDataFromUrl; } }));
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/base/nodepolyfill.ts":
+/***/ "./src/base/nodepolyfill.ts"
 /*!**********************************!*\
   !*** ./src/base/nodepolyfill.ts ***!
   \**********************************/
-/***/ ((__unused_webpack_module, exports, __nested_webpack_require_37680__) => {
+(__unused_webpack_module, exports, __nested_webpack_require_37585__) {
 
 
 //nodejs and electron polyfills for web api's
 //commented out type info as that breaks webpack with optional dependencies
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.imageDataFromBuffer = exports.imageDataFromBase64 = exports.imageDataToFileBytes = exports.createCanvas = exports.imageDataToDrawable = exports.requireElectronCommon = exports.requireNodeCanvas = exports.requireSharp = exports.polyfillRequire = void 0;
-const index_1 = __nested_webpack_require_37680__(/*! ./index */ "./src/base/index.ts");
-const imagedetect_1 = __nested_webpack_require_37680__(/*! ./imagedetect */ "./src/base/imagedetect.ts");
+const index_1 = __nested_webpack_require_37585__(/*! ./index */ "./src/base/index.ts");
+const imagedetect_1 = __nested_webpack_require_37585__(/*! ./imagedetect */ "./src/base/imagedetect.ts");
 var requirefunction = null;
 /**
  * Call this function to let the libs require extra dependencies on nodejs in order
@@ -1346,7 +1346,7 @@ function requireSharp() {
             return requirefunction("sharp");
         }
         else {
-            return __nested_webpack_require_37680__(/* webpackIgnore: true */ /*! sharp */ "sharp"); // as typeof import("sharp");
+            return __nested_webpack_require_37585__(/* webpackIgnore: true */ /*! sharp */ "sharp"); // as typeof import("sharp");
         }
     }
     catch (e) { }
@@ -1361,7 +1361,7 @@ function requireNodeCanvas() {
             return requirefunction("canvas");
         }
         else {
-            return __nested_webpack_require_37680__(/* webpackIgnore: true */ /*! canvas */ "canvas"); // as typeof import("sharp");
+            return __nested_webpack_require_37585__(/* webpackIgnore: true */ /*! canvas */ "canvas"); // as typeof import("sharp");
         }
     }
     catch (e) { }
@@ -1374,7 +1374,7 @@ function requireElectronCommon() {
             return requirefunction("electron/common");
         }
         else {
-            return __nested_webpack_require_37680__(/* webpackIgnore: true */ /*! electron/common */ "electron/common");
+            return __nested_webpack_require_37585__(/* webpackIgnore: true */ /*! electron/common */ "electron/common");
         }
     }
     catch (e) { }
@@ -1474,13 +1474,13 @@ async function imageDataFromBuffer(buffer) {
 exports.imageDataFromBuffer = imageDataFromBuffer;
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/base/pasteinput.ts":
+/***/ "./src/base/pasteinput.ts"
 /*!********************************!*\
   !*** ./src/base/pasteinput.ts ***!
   \********************************/
-/***/ (function(__unused_webpack_module, exports, __nested_webpack_require_43872__) {
+(__unused_webpack_module, exports, __nested_webpack_require_43757__) {
 
 
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
@@ -1508,8 +1508,8 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.fileDialog = exports.start = exports.startDragNDrop = exports.triggerPaste = exports.unlisten = exports.listen = exports.lastref = void 0;
-const index_1 = __nested_webpack_require_43872__(/*! ./index */ "./src/base/index.ts");
-const ImageDetect = __importStar(__nested_webpack_require_43872__(/*! ./imagedetect */ "./src/base/imagedetect.ts"));
+const index_1 = __nested_webpack_require_43757__(/*! ./index */ "./src/base/index.ts");
+const ImageDetect = __importStar(__nested_webpack_require_43757__(/*! ./imagedetect */ "./src/base/imagedetect.ts"));
 var listeners = [];
 var started = false;
 var dndStarted = false;
@@ -1716,13 +1716,13 @@ function fromFile(file) {
 }
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/base/rect.ts":
+/***/ "./src/base/rect.ts"
 /*!**************************!*\
   !*** ./src/base/rect.ts ***!
   \**************************/
-/***/ ((__unused_webpack_module, exports) => {
+(__unused_webpack_module, exports) {
 
 
 //util class for rectangle maths
@@ -1823,13 +1823,13 @@ class Rect {
 exports["default"] = Rect;
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/base/wrapper.ts":
+/***/ "./src/base/wrapper.ts"
 /*!*****************************!*\
   !*** ./src/base/wrapper.ts ***!
   \*****************************/
-/***/ (function(__unused_webpack_module, exports, __nested_webpack_require_55275__) {
+(__unused_webpack_module, exports, __nested_webpack_require_55131__) {
 
 
 var __importDefault = (this && this.__importDefault) || function (mod) {
@@ -1837,10 +1837,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.captureStream = exports.captureMultiAsync = exports.captureAsync = exports.ImageStreamReader = exports.once = exports.removeListener = exports.on = exports.addResizeElement = exports.getMousePosition = exports.hasAlt1Version = exports.resetEnvironment = exports.identifyApp = exports.unmixColor = exports.mixColor = exports.encodeImageString = exports.decodeImageString = exports.transferImageData = exports.captureHoldFullRs = exports.captureHoldScreen = exports.captureHold = exports.capture = exports.getdisplaybounds = exports.requireAlt1 = exports.openbrowser = exports.skinName = exports.hasAlt1 = exports.newestversion = exports.Alt1Error = exports.NoAlt1Error = void 0;
-const rect_1 = __importDefault(__nested_webpack_require_55275__(/*! ./rect */ "./src/base/rect.ts"));
-const imgref_1 = __nested_webpack_require_55275__(/*! ./imgref */ "./src/base/imgref.ts");
-const imagedata_extensions_1 = __nested_webpack_require_55275__(/*! ./imagedata-extensions */ "./src/base/imagedata-extensions.ts");
-__nested_webpack_require_55275__(/*! ./alt1api */ "./src/base/alt1api.ts");
+const rect_1 = __importDefault(__nested_webpack_require_55131__(/*! ./rect */ "./src/base/rect.ts"));
+const imgref_1 = __nested_webpack_require_55131__(/*! ./imgref */ "./src/base/imgref.ts");
+const imagedata_extensions_1 = __nested_webpack_require_55131__(/*! ./imagedata-extensions */ "./src/base/imagedata-extensions.ts");
+__nested_webpack_require_55131__(/*! ./alt1api */ "./src/base/alt1api.ts");
 /**
  * Thrown when a method is called that can not be used outside of Alt1
  */
@@ -2439,43 +2439,43 @@ function captureStream(x, y, width, height, fps, framecb, errorcb) {
 exports.captureStream = captureStream;
 
 
-/***/ }),
+/***/ },
 
-/***/ "canvas":
+/***/ "canvas"
 /*!*************************!*\
   !*** external "canvas" ***!
   \*************************/
-/***/ ((module) => {
+(module) {
 
 if(typeof __WEBPACK_EXTERNAL_MODULE_canvas__ === 'undefined') { var e = new Error("Cannot find module 'canvas'"); e.code = 'MODULE_NOT_FOUND'; throw e; }
 
 module.exports = __WEBPACK_EXTERNAL_MODULE_canvas__;
 
-/***/ }),
+/***/ },
 
-/***/ "electron/common":
+/***/ "electron/common"
 /*!**********************************!*\
   !*** external "electron/common" ***!
   \**********************************/
-/***/ ((module) => {
+(module) {
 
 if(typeof __WEBPACK_EXTERNAL_MODULE_electron_common__ === 'undefined') { var e = new Error("Cannot find module 'electron/common'"); e.code = 'MODULE_NOT_FOUND'; throw e; }
 
 module.exports = __WEBPACK_EXTERNAL_MODULE_electron_common__;
 
-/***/ }),
+/***/ },
 
-/***/ "sharp":
+/***/ "sharp"
 /*!************************!*\
   !*** external "sharp" ***!
   \************************/
-/***/ ((module) => {
+(module) {
 
 if(typeof __WEBPACK_EXTERNAL_MODULE_sharp__ === 'undefined') { var e = new Error("Cannot find module 'sharp'"); e.code = 'MODULE_NOT_FOUND'; throw e; }
 
 module.exports = __WEBPACK_EXTERNAL_MODULE_sharp__;
 
-/***/ })
+/***/ }
 
 /******/ 	});
 /************************************************************************/
@@ -2483,11 +2483,17 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_sharp__;
 /******/ 	var __webpack_module_cache__ = {};
 /******/ 	
 /******/ 	// The require function
-/******/ 	function __nested_webpack_require_78005__(moduleId) {
+/******/ 	function __nested_webpack_require_77824__(moduleId) {
 /******/ 		// Check if module is in cache
 /******/ 		var cachedModule = __webpack_module_cache__[moduleId];
 /******/ 		if (cachedModule !== undefined) {
 /******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Check if module exists (development only)
+/******/ 		if (__webpack_modules__[moduleId] === undefined) {
+/******/ 			var e = new Error("Cannot find module '" + moduleId + "'");
+/******/ 			e.code = 'MODULE_NOT_FOUND';
+/******/ 			throw e;
 /******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = __webpack_module_cache__[moduleId] = {
@@ -2497,7 +2503,7 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_sharp__;
 /******/ 		};
 /******/ 	
 /******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __nested_webpack_require_78005__);
+/******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __nested_webpack_require_77824__);
 /******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
@@ -2506,7 +2512,7 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_sharp__;
 /************************************************************************/
 /******/ 	/* webpack/runtime/global */
 /******/ 	(() => {
-/******/ 		__nested_webpack_require_78005__.g = (function() {
+/******/ 		__nested_webpack_require_77824__.g = (function() {
 /******/ 			if (typeof globalThis === 'object') return globalThis;
 /******/ 			try {
 /******/ 				return this || new Function('return this')();
@@ -2521,7 +2527,7 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_sharp__;
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module is referenced by other modules so it can't be inlined
-/******/ 	var __nested_webpack_exports__ = __nested_webpack_require_78005__("./src/base/index.ts");
+/******/ 	var __nested_webpack_exports__ = __nested_webpack_require_77824__("./src/base/index.ts");
 /******/ 	
 /******/ 	return __nested_webpack_exports__;
 /******/ })()
@@ -2545,16 +2551,16 @@ return /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/ocr/index.ts":
+/***/ "./src/ocr/index.ts"
 /*!**************************!*\
   !*** ./src/ocr/index.ts ***!
   \**************************/
-/***/ ((__unused_webpack_module, exports, __nested_webpack_require_728__) => {
+(__unused_webpack_module, exports, __nested_webpack_require_720__) {
 
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.generateFont = exports.loadFontImage = exports.readChar = exports.readSmallCapsBackwards = exports.readLine = exports.getChatColor = exports.getChatColorMono = exports.findReadLine = exports.findChar = exports.decompose3col = exports.decomposeblack = exports.decompose2col = exports.canblend = exports.unblendTrans = exports.unblendKnownBg = exports.unblendBlackBackground = exports.debugFont = exports.debugout = exports.debug = void 0;
-const base_1 = __nested_webpack_require_728__(/*! alt1/base */ "alt1/base");
+const base_1 = __nested_webpack_require_720__(/*! alt1/base */ "alt1/base");
 exports.debug = {
     printcharscores: false,
     trackread: false
@@ -3061,12 +3067,12 @@ function readChar(buffer, font, col, x, y, backwards, allowSecondary) {
     }
     //====== start reading the char ======
     var scores = [];
-    for (var chr = 0; chr < font.chars.length; chr++) {
+    charloop: for (var chr = 0; chr < font.chars.length; chr++) {
         var chrobj = font.chars[chr];
         if (chrobj.secondary && !allowSecondary) {
             continue;
         }
-        scores[chr] = { score: 0, sizescore: 0, chr: chrobj };
+        const scoreobj = { score: 0, sizescore: 0, chr: chrobj };
         var chrx = (backwards ? x - chrobj.width : x);
         if (exports.debug.trackread) {
             debugimg = new base_1.ImageData(font.width, font.height);
@@ -3083,22 +3089,31 @@ function readChar(buffer, font, col, x, y, backwards, allowSecondary) {
                 penalty = canblend(buffer.data[i], buffer.data[i + 1], buffer.data[i + 2], col[0] * lum, col[1] * lum, col[2] * lum, chrobj.pixels[a + 2] / 255);
                 a += 4;
             }
-            scores[chr].score += Math.max(0, penalty);
+            scoreobj.score += penalty;
+            // Short circuit the loop as soon as the penalty threshold (400) is reached
+            if (!debugobj && scoreobj.score > 400) {
+                continue charloop;
+            }
             //TODO add compiler flag to this to remove it for performance
             if (debugimg) {
                 debugimg.setPixel(chrobj.pixels[a], chrobj.pixels[a + 1], [penalty, penalty, penalty, 255]);
             }
         }
-        scores[chr].sizescore = scores[chr].score - chrobj.bonus;
+        scoreobj.sizescore = scoreobj.score - chrobj.bonus;
         if (debugobj) {
-            debugobj.push({ chr: chrobj.chr, score: scores[chr].sizescore, rawscore: scores[chr].score, img: debugimg });
+            debugobj.push({ chr: chrobj.chr, score: scoreobj.sizescore, rawscore: scoreobj.score, img: debugimg });
         }
+        scores.push(scoreobj);
     }
-    scores.sort((a, b) => a.sizescore - b.sizescore);
     if (exports.debug.printcharscores) {
+        scores.sort((a, b) => a.sizescore - b.sizescore);
         scores.slice(0, 5).forEach(q => console.log(q.chr.chr, q.score.toFixed(3), q.sizescore.toFixed(3)));
     }
-    var winchr = scores[0];
+    let winchr = null;
+    for (const chrscore of scores) {
+        if (!winchr || (chrscore && chrscore.sizescore < winchr.sizescore))
+            winchr = chrscore;
+    }
     if (!winchr || winchr.score > 400) {
         return null;
     }
@@ -3219,17 +3234,17 @@ function generateFont(unblended, chars, seconds, bonusses, basey, spacewidth, tr
 exports.generateFont = generateFont;
 
 
-/***/ }),
+/***/ },
 
-/***/ "alt1/base":
+/***/ "alt1/base"
 /*!**************************************************************************************************!*\
   !*** external {"root":"A1lib","commonjs2":"alt1/base","commonjs":"alt1/base","amd":"alt1/base"} ***!
   \**************************************************************************************************/
-/***/ ((module) => {
+(module) {
 
 module.exports = __WEBPACK_EXTERNAL_MODULE_alt1_base__;
 
-/***/ })
+/***/ }
 
 /******/ 	});
 /************************************************************************/
@@ -3237,11 +3252,17 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_alt1_base__;
 /******/ 	var __webpack_module_cache__ = {};
 /******/ 	
 /******/ 	// The require function
-/******/ 	function __nested_webpack_require_27427__(moduleId) {
+/******/ 	function __nested_webpack_require_27758__(moduleId) {
 /******/ 		// Check if module is in cache
 /******/ 		var cachedModule = __webpack_module_cache__[moduleId];
 /******/ 		if (cachedModule !== undefined) {
 /******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Check if module exists (development only)
+/******/ 		if (__webpack_modules__[moduleId] === undefined) {
+/******/ 			var e = new Error("Cannot find module '" + moduleId + "'");
+/******/ 			e.code = 'MODULE_NOT_FOUND';
+/******/ 			throw e;
 /******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = __webpack_module_cache__[moduleId] = {
@@ -3251,7 +3272,7 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_alt1_base__;
 /******/ 		};
 /******/ 	
 /******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __nested_webpack_require_27427__);
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __nested_webpack_require_27758__);
 /******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
@@ -3262,7 +3283,7 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_alt1_base__;
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module is referenced by other modules so it can't be inlined
-/******/ 	var __nested_webpack_exports__ = __nested_webpack_require_27427__("./src/ocr/index.ts");
+/******/ 	var __nested_webpack_exports__ = __nested_webpack_require_27758__("./src/ocr/index.ts");
 /******/ 	
 /******/ 	return __nested_webpack_exports__;
 /******/ })()
